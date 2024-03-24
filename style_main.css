@@ -5,7 +5,8 @@
     margin: 0;
     padding: 0;
 }
-.upper{
+
+.main-header{
     height: 47vh; /* visible part */
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
@@ -14,18 +15,28 @@
     background-position: 20% 37.5%;  /* work with img  */
     
 }
-nav{
+.nav__item{
+    color: white;
+    text-decoration: none;
+}
+.catalog__item{
+    color: black;
+    text-decoration: none;
+}
+.main-header__nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 17px 0 17px 0;
     margin: 0 17.4% 0 17.4%
 }
-nav a{
+
+.main-header__nav a{
     color: white;
-     text-decoration: none;
+    text-decoration: none;
 }
-nav ul li{
+
+.main-header__nav ul li{
     display: inline-block;
     margin-right: 20px;
     margin-left: 20px;
@@ -39,13 +50,15 @@ nav ul li{
     letter-spacing: 0.6px;
     color: white;
 }
-.header_bottom{
+
+.text-center{
     display: flex;
     height: 39.2vh;
     align-items: center;
     align-self: center;
     justify-content: space-around;
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -56,14 +69,16 @@ header{
     align-self: center;
     color: #FFFFFF;
 }
-.motiv{
+
+.text-center__h1{
     font-family: Lora;
     font-size: 50px;
     font-weight: 400;
     line-height: 51px;
     letter-spacing: 2px;
 }
-.about_motiv{
+
+.text-center__h3{
     justify-content: center;
     margin-top: 2vh;
     font-family: "Oxygen";
@@ -73,7 +88,8 @@ header{
     letter-spacing: 0em;
     color: #FFFFFFA1;
 }
-.button{
+
+.text-center__button-view{
     align-self: center;
     margin-top: 2vh;
     font-family: "Oxygen";
@@ -84,7 +100,8 @@ header{
     background-color:  #DD783F;
     padding: 12px 31px 12px 31px;
 }
-.menu ul{
+
+.catalog{
     width: 1000px;
     display: flex;
     flex-wrap: wrap;
@@ -98,11 +115,8 @@ header{
     justify-content: space-around;
     
 }
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-}
-.menu li{
+
+.catalog li{
     display: flex;
     justify-content: center;
     align-self: center;
@@ -116,6 +130,7 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+
 section{
     display: block; 
     margin-left: auto;
@@ -123,6 +138,7 @@ section{
     background: #F7F7F7;
     padding-bottom: 20em;
 }
+
 section h1{
     font-family: Oxygen;
     font-size: 20px;
@@ -130,14 +146,17 @@ section h1{
     line-height: 27px;
     letter-spacing: 2px;
 }
-.main_heading{
+
+.limited-container{
     width: 20vh;
     padding-top: 4.2vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+
 }
-.featured_post{
+
+.card{
     margin-top: 2vh;
     display: flex;
     min-height: 26vh;
@@ -150,7 +169,8 @@ section h1{
    /* justify-content: space-around; */
 
 }
-.the_road_of_head{
+
+.card-item-glow{
     display: flex;
     flex-direction: column;
     background-image: url('image/Amount.jpeg');
@@ -159,7 +179,8 @@ section h1{
     height: 294px;
     justify-content: flex-end;
 }
-.from_top_down{
+
+.card-item-balloon{
     display: flex;
     flex-direction: column;
     background-image: url('image/from_top_down.jpeg');
@@ -169,7 +190,7 @@ section h1{
     justify-content: space-between ;
 }
 
-.button_adventure{
+.card-item-balloon__button{
     margin-left: 2vh;
     margin-top: 2vh;
     font-family: Oxygen;
@@ -184,7 +205,8 @@ section h1{
     flex-direction: column;
     align-self: flex-start;
 }
-.posts{
+
+.card-item__name{
     margin-bottom: 0.5vh;
     margin-left: 1vh;
     font-family: Lora;
@@ -196,10 +218,12 @@ section h1{
     color: #FFFFFF;
 
 }
+
 li{
     list-style-type: none;
 }
-.avatarka_num1{
+
+.user-photo1{
     display: inline-flex;
     margin-left: 1vh;
     margin-right: 1vh;
@@ -209,7 +233,8 @@ li{
     background-size: cover;
     border-radius: 50%;
 }
-.avatarka_num2{
+
+.user-photo2{
     display: inline-flex;
     margin-left: 1vh;
     margin-right: 1vh;
@@ -219,7 +244,8 @@ li{
     background-size: cover;
     border-radius: 50%;
 }
-.about_post{
+
+.card-item__about{
     margin-bottom: 0.5vh;
     margin-left: 1vh;
     font-family: Oxygen;
@@ -230,7 +256,8 @@ li{
     text-align: left;
     color: #FFFFFFB2;
 }
-.list_about_user{
+
+.name-and-photo{
     margin-bottom: 1vh;
     font-family: Oxygen;
     font-size: 12px;
@@ -245,14 +272,17 @@ li{
     text-align: center;
     align-self: center;
 }
-.footter_post ul {
+
+.card-item__user ul {
     display: inline-flex;
     justify-content: space-between;
 }
-.footter_post ul{
+
+.card-item__user ul{
     width: 100%
 }
-.most_recent{
+
+.main-information-block{
     padding-bottom: 10vh;
     margin-top: 2vh;
     display: flex;
@@ -264,11 +294,13 @@ li{
     flex-wrap: wrap;
     gap: 2vh;
 }
+
 section{
     max-height: 1225px;
     position: relative;
 }
-.mini_publish{
+
+.mini-publish{
     background-color: #FFFFFF;
     display: inline-flex;
     justify-content: space-around;
@@ -276,13 +308,15 @@ section{
     height: 30vh;
 
 }
-.image_most_recent{
+
+.mini-publish__image{
     width: 100%;
     height: 15vh;
     object-fit: cover;
     
 }
-.name_of_most_recent{
+
+.mini-publish__name{
     font-family: Lora;
     font-size: 16px;
     font-weight: 400;
@@ -291,7 +325,8 @@ section{
     text-align: left;
     margin-left: 1vh;
 }
-.about_most_recent{
+
+.mini-publish__about{
     font-family: Oxygen;
     font-size: 13px;
     font-weight: 400;
@@ -302,15 +337,17 @@ section{
     color: #7A7A7A;
     width: 27vh;
     margin-bottom: 2vh;
-
 }
+
 .avatarka_num3{
     display: inline-flex;
 }
-.list_about_user{
-    display: inline-flex;
+
+.name-and-photo{ 
+   display: inline-flex;
 }
-.list_about_user_black{
+
+.mini-publish__user{
     font-family: Oxygen;
     font-size: 12px;
     font-weight: 400;
@@ -322,14 +359,17 @@ section{
     width: 80%;
     align-self: center;
 }
-.footter_post_most_recent{
+
+.mini-publish__card-item-user{
    display: inline-flex;   
 }
-.list_about_user_black  ul{
+
+.mini-publish__user  ul{
     display: inline-flex;
     justify-content: space-between;
     width: 27vh;
 }
+
 footer{
     height: 89px; /* visible part */
     width: 100%;
@@ -338,14 +378,16 @@ footer{
     background-size: cover; /* work with img  */
     background-position: 20% 37.5%;  /* work with img  */
 }
-.list_footer{
+
+.list-footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 17px 0 17px 0;
     margin: 0 17.4% 0 17.4%   
 }
-.list_footer li{
+
+.list-footer li{
     display: inline-block;
     margin-right: 20px;
     margin-left: 20px;
