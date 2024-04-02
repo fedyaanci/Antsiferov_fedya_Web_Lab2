@@ -10,7 +10,7 @@
     height: 47vh; /* visible part */
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-                url("main-image/sand_mount.jpeg"); 
+                url("static/main-image/sand_mount.jpeg"); 
     background-size: cover; /* work with img  */
     background-position: 20% 37.5%;  /* work with img  */
     
@@ -173,17 +173,18 @@ section h1{
 .card-item-glow{
     display: flex;
     flex-direction: column;
-    background-image: url('main-image/Amount.jpeg');
+    background-image: url('static/main-image/Amount.jpeg');
     background-size: cover ;
     width: 500px;
     height: 294px;
     justify-content: flex-end;
+    text-decoration: none;
 }
 
 .card-item-balloon{
     display: flex;
     flex-direction: column;
-    background-image: url('main-image/from_top_down.jpeg');
+    background-image: url('static/main-image/from_top_down.jpeg');
     background-size: cover ;
     width: 500px;
     height: 294px;
@@ -227,7 +228,7 @@ li{
     display: inline-flex;
     margin-left: 1vh;
     margin-right: 1vh;
-    background-image: url('main-image/user1.jpeg');
+    background-image: url('static/main-image/user1.jpeg');
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -238,7 +239,7 @@ li{
     display: inline-flex;
     margin-left: 1vh;
     margin-right: 1vh;
-    background-image: url('main-image/user2.jpeg');
+    background-image: url('static/main-image/user2.jpeg');
     width: 30px;
     height: 30px;
     background-size: cover;
@@ -271,6 +272,10 @@ li{
     vertical-align: middle;
     text-align: center;
     align-self: center;
+}
+
+.card-item__user{
+    display:flex;
 }
 
 .card-item__user ul {
@@ -374,7 +379,7 @@ footer{
     height: 89px; /* visible part */
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-                url("main-image/village_in_amount.jpg"); 
+                url("static/main-image/village_in_amount.jpg"); 
     background-size: cover; /* work with img  */
     background-position: 20% 37.5%;  /* work with img  */
 }
